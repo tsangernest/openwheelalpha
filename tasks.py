@@ -37,4 +37,3 @@ def down(c):
     print(f"\n***\nDestroying Containers\n***\n")
     c.run("docker compose down", pty=True)
     c.run("docker system prune -a -f", pty=True)
-
