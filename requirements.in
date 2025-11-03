@@ -2,10 +2,6 @@ django~=5.2
 django-filter
 django-cors-headers
 
-djoser
-
-pillow
-
 pandas
 
 # below dev stuff
