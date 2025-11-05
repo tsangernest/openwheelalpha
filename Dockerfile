@@ -1,4 +1,4 @@
-FROM python:3.13.2-slim
+FROM python:3.12.12-slim
 
 
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -18,7 +18,7 @@ RUN python -m venv venv/
 WORKDIR /app
 
 
-RUN pip install --upgrade pip
+RUN pip install --upgrade 'pip<25.3'
 RUN pip install -U setuptools wheel psycopg2-binary
 RUN pip install -r requirements.txt --no-cache-dir
 
