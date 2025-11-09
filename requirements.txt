@@ -81,3 +81,5 @@ tzdata==2025.2
     # via
     #   faker
     #   pandas
+uuid-v7==1.0.0
+    # via -r requirements.in
