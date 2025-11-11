@@ -17,7 +17,7 @@ def insert_nationality(apps, _):
         f= pandas.read_csv(csv_file, header=0, usecols=column_headers)
 
         # objects we are working with
-        Nationality = apps.get_model(app_label="app", model_name="nationality")
+        Nationality = apps.get_model(app_label="app", model_name="Nationality")
 
         # bulk create
         n_objs = [Nationality(demonym=d, country=c) for d, c in f.to_numpy()]
