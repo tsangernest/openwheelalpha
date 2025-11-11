@@ -9,6 +9,7 @@ factory-boy
 pytest-django
 pytest-repeat
 django-test-migrations
+django-debug-toolbar
 
 isort
 black
