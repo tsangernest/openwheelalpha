@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
+import os
 
 from pathlib import Path
 
@@ -83,9 +84,17 @@ WSGI_APPLICATION = "app.wsgi.application"
 
 DATABASES = {
     "default": {
+        "ENGINE": f"django.db.backends.{os.getenv(key='DATABASE_ENGINE', default='sqlite3')}",
+        "NAME": f"{os.getenv(key='DATABASE_NAME', default='db.sqlite3')}",
+        "USER": f"{os.getenv(key='DATABASE_USERNAME', default='dbuser')}",
+        "PASSWORD": f"{os.getenv(key='DATABASE_PASSWORD', default='userpass')}",
+        "HOST": f"{os.getenv(key='DATABASE_HOST', default='127.0.0.1')}",
+        "PORT": f"{os.getenv(key='DATABASE_PORT', default='5432')}",
+    },
+    "TEST": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
+        "NAME": ":memory:",
+    },
 }
 
 
