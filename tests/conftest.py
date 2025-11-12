@@ -9,25 +9,8 @@ from django.test import Client
 @fixture(scope="session")
 def django_db_setup(django_db_setup, django_db_blocker):
     with django_db_blocker.unblock():
-        # readable style
-        # fixtures_path = Path("/app/tests/fixtures/")
-        # fixtures = [f for f in fixtures_path.glob("*.json")]
-        # for f in fixtures:
-        #     call_command("loaddata",f, app_label="app.nationality", verbosity=3, format="json", force_color=True)
-
-        # stupid style
-        # fixtures_path = Path("/app/tests/fixtures/")
-        # fixtures = [call_command("loaddata",f, app_label="app.nationality", verbosity=3, format="json", force_color=True) for f in fixtures_path.glob("*.json")]        fixtures_path = Path("/app/tests/fixtures/")
-
-        # most wtf style
-        [call_command(
-            "loaddata",
-            f,
-            app_label="app.nationality",
-            verbosity=3,
-            format="json",
-            force_color=True,
-        ) for f in Path("/app/tests/fixtures/").glob("*.json")]
+        for f in Path("/app/tests/fixtures/").glob("*.json"):
+             call_command("loaddata", f, "--verbosity=3", "--format=json")
 
 
 @fixture
