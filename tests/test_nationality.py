@@ -9,4 +9,5 @@ def test_nationality_endpoint(rest_client):
     response = rest_client.get(path="/nationality/")
     assert HTTPStatus.OK == response.status_code
     json_response = response.json()
-    breakpoint()
+    assert json_response["count"] == Nationality.objects.count()
+
