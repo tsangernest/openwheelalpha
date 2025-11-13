@@ -3,10 +3,19 @@ from uuid import uuid4
 
 from django.db import models
 
+from app.managers import _DeprecateManager, NationalityManager
+
 
 class Nationality(models.Model):
     demonym = models.CharField(max_length=255)
     country = models.CharField(max_length=255)
+
+    # More so for filtering rows
+    deleted_at = models.DateTimeField(blank=True, null=True)
+
+    # Managers for top level filtering
+    objects = NationalityManager()
+    include_deprecated_objects = _DeprecateManager()
 
     class Meta:
         ordering = ["demonym"]
