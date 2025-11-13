@@ -14,39 +14,19 @@ class Migration(migrations.Migration):
     operations = [
         migrations.CreateModel(
             name="Nationality",
+            options={"ordering": ["demonym"]},
             fields=[
-                (
-                    "id",
-                    models.BigAutoField(
-                        auto_created=True,
-                        primary_key=True,
-                        serialize=False,
-                        verbose_name="ID",
-                    ),
-                ),
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID",)),
                 ("demonym", models.CharField(max_length=255)),
                 ("country", models.CharField(max_length=255)),
             ],
-            options={
-                "ordering": ["demonym"],
-            },
         ),
         migrations.CreateModel(
             name="Driver",
+            options={"ordering": ["id"]},
             fields=[
-                (
-                    "id",
-                    models.BigAutoField(
-                        auto_created=True,
-                        primary_key=True,
-                        serialize=False,
-                        verbose_name="ID",
-                    ),
-                ),
-                (
-                    "uuid",
-                    models.UUIDField(default=uuid.uuid4, editable=False, unique=True),
-                ),
+                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
+                ("uuid", models.UUIDField(default=uuid.uuid4, editable=False, unique=True)),
                 ("ref", models.CharField(blank=True, max_length=255)),
                 ("number", models.CharField(blank=True, max_length=255)),
                 ("code", models.CharField(blank=True, max_length=6)),
@@ -54,17 +34,8 @@ class Migration(migrations.Migration):
                 ("surname", models.CharField(max_length=255)),
                 ("date_of_birth", models.DateField(blank=True)),
                 ("url", models.URLField(blank=True)),
-                (
-                    "nationality",
-                    models.ForeignKey(
-                        blank=True,
-                        on_delete=django.db.models.deletion.DO_NOTHING,
-                        to="app.nationality",
-                    ),
-                ),
+                ("nationality", models.ForeignKey(blank=True, on_delete=django.db.models.deletion.DO_NOTHING, to="app.nationality",)),
             ],
-            options={
-                "ordering": ["id"],
-            },
         ),
     ]
+

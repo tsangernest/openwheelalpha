@@ -1,8 +1,8 @@
+from functools import cached_property
 from uuid import uuid4
 
 from django.db import models
 
-# Create your models here.
 
 class Nationality(models.Model):
     demonym = models.CharField(max_length=255)
@@ -31,4 +31,25 @@ class Driver(models.Model):
 
     def __str__(self):
         return f"[{self.surname}, {self.forename}]"
+
+
+class Circuit(models.Model):
+    ref = models.CharField(blank=True, max_length=255)
+    name = models.CharField(max_length=255)
+    location = models.CharField(blank=True, max_length=255)
+    country = models.ForeignKey(to="Nationality", on_delete=models.DO_NOTHING, blank=True)
+    longitude = models.DecimalField(blank=True, max_digits=32, decimal_places=16)
+    latitude = models.DecimalField(blank=True, max_digits=32, decimal_places=16)
+    altitude = models.IntegerField(blank=True, help_text="Measured in meters")
+    url = models.URLField(blank=True)
+
+    class Meta:
+        ordering = ["id"]
+
+    @cached_property
+    def coordinates(self):
+        return f"{self.longitude}, {self.latitude}"
+
+    def __str__(self):
+        return f"{self.name}"
 
