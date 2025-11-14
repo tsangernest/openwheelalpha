@@ -3,10 +3,32 @@
 from django.db import migrations
 
 
+def reassign_circuits(apps, _):
+    Circuit = apps.get_model(app_label="app", model_name="Circuit").objects.only("country")
+    Nationality = apps.get_model(app_label="app", model_name="Nationality")
+
+    # Get the unique set of nationality
+    new_nationality_set = Nationality.objects.filter(deleted_at__isnull=True)
+
+    circuit_objs = []
+    for c in Circuit:
+        c.country = new_nationality_set.get(country=c.country.country)
+        circuit_objs.append(c)
+
+    Circuit.bulk_update(circuit_objs, ["country"])
+
+
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ("app", "0005_normalize_nation"),
-    ]
+    dependencies = [(
+        "app",
+        "0005_normalize_nation",
+    )]
 
-    operations = []
+    operations = [
+        migrations.RunPython(
+            code=reassign_circuits,
+            reverse_code=migrations.RunPython.noop,
+            atomic=True,
+        ),
+    ]
