@@ -19,11 +19,12 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 from django.contrib import admin
 from django.urls import path
 
-from app import views
+from app.views import driver, nationality
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("nationality/", views.nationality),
+    path("nationality/", nationality),
+    path("driver/", driver)
 ] + debug_toolbar_urls()
 
 
