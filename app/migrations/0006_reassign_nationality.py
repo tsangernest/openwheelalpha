@@ -3,6 +3,22 @@
 from django.db import migrations
 
 
+def reassign_drivers(apps, _):
+    Driver = apps.get_model("app.Driver").objects.only("nationality")
+    new_nationality_set = (apps
+                                        .get_model("app.Nationality")
+                                        .objects
+                                        .filter(deleted_at__isnull=True)
+                                        .only("country"))
+
+    driver_objs = []
+    for d in Driver:
+        d.nationality = new_nationality_set.get(country=d.nationality.country)
+        driver_objs.append(d)
+
+    Driver.bulk_update(driver_objs, ["nationality"])
+
+
 def reassign_circuits(apps, _):
     Circuit = apps.get_model(app_label="app", model_name="Circuit").objects.only("country")
     Nationality = apps.get_model(app_label="app", model_name="Nationality")
@@ -28,6 +44,11 @@ class Migration(migrations.Migration):
     operations = [
         migrations.RunPython(
             code=reassign_circuits,
+            reverse_code=migrations.RunPython.noop,
+            atomic=True,
+        ),
+        migrations.RunPython(
+            code=reassign_drivers,
             reverse_code=migrations.RunPython.noop,
             atomic=True,
         ),
