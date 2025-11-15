@@ -35,3 +35,5 @@ def test_normalize_nationality_migration(migrator):
     assert new_circuit.filter(country__deleted_at__isnull=True).exists()
     assert new_driver.filter(nationality__deleted_at__isnull=True).exists()
 
+    migrator.reset()
+
