@@ -38,7 +38,7 @@ class Migration(migrations.Migration):
 
     dependencies = [(
         "app",
-        "0005_normalize_nation",
+        "0005_normalize_nationality",
     )]
 
     operations = [

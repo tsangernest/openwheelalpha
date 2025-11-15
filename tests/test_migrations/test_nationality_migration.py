@@ -13,3 +13,15 @@ def test_nationality_migration(migrator):
 
     migrator.reset()
 
+
+@pytest.mark.django_db
+def test_normalize_nationality_migration(migrator):
+    old_state = migrator.apply_initial_migration(("app", "0005_normalize_nationality"))
+    old_driver = old_state.apps.get_model("app.Driver").objects.only("nationality")
+
+    # * For all previous database state drivers, there does not exist a driver
+    #    that is assigned with new unique set of Nationality objects.
+    #    Designated using the 'deleted_at' attribute
+    assert not old_driver.filter(nationality__deleted_at__isnull=True).exists()
+
+
