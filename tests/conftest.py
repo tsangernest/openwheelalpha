@@ -14,7 +14,7 @@ def django_db_setup(django_db_setup, django_db_blocker):
 
 
 @fixture
-def rest_client():
+def c():
     u = User.objects.create(
         is_active=True,
         first_name="test_open_first",
@@ -24,5 +24,5 @@ def rest_client():
     )
     c = Client()
     c.force_login(user=u)
-    yield c
+    return c
 
