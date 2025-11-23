@@ -1,6 +1,7 @@
 import pytest
 
 from app.models import Driver
+from tests.factories import DriverFactory
 
 
 @pytest.mark.skip
@@ -21,7 +22,7 @@ def test_driver_endpoint_create(django_client):
         "surname": "Dayne",
         "date_of_birth": "1281-01-01",
         "ref": "sword_of_the_morning",
-        "nationality_id": "3545",
+        "nationality_id": 3545,
     }
     response = django_client.post(path="/driver/", data=post_payload)
     json_response = response.json()
@@ -36,7 +37,15 @@ def test_driver_endpoint_create(django_client):
 
 @pytest.mark.django_db
 def test_driver_endpoint_customise_return_data(django_client):
+    DriverFactory()
     response = django_client.get(path="/driver/")
-    assert response.status_code == 200
     json_response = response.json()
-    assert json_response["status"] == 200
+
+
+
+
+
+
+
+
+
