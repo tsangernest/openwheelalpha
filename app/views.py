@@ -1,5 +1,4 @@
 import json
-from http import HTTPStatus
 
 from django.core.serializers import serialize
 from django.http import HttpRequest, JsonResponse
@@ -12,25 +11,24 @@ def nationality(request: HttpRequest):
         json_data = json.loads(serialize(format="json",
                                                           queryset=Nationality.objects.all(),
                                                           fields=["demonym", "country"]))
-        return JsonResponse({"status": HTTPStatus.OK,
+        return JsonResponse({"status": 200,
                                            "count": Nationality.objects.count(),
                                            "data": json_data})
-    return JsonResponse({"status": HTTPStatus.NOT_FOUND})
+    return JsonResponse({"status": 404})
 
 
 def driver(request: HttpRequest):
     if request.method == "GET":
         json_data = json.loads(serialize(format="json",
                                                           queryset=Driver.objects.all()))
-        return JsonResponse({"status": HTTPStatus.OK,
+        return JsonResponse({"status": 200,
                                             "count": Driver.objects.count(),
                                             "data": json_data})
 
     elif request.method == "POST":
-        d_obj = Driver(**request.POST.dict())
-        driver_obj = d_obj.save()
-        return JsonResponse({"status": HTTPStatus.CREATED,
-                                            "data": driver_obj})
+        driver_obj = Driver.objects.create(**request.POST.dict())
+        driver_data = Driver.objects.filter(id=driver_obj.pk).values().first()
+        return JsonResponse({"status": 201, "data": driver_data})
 
-    return JsonResponse({"status": HTTPStatus.NOT_FOUND})
+    return JsonResponse({"status": 404})
 
