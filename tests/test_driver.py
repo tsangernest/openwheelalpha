@@ -36,4 +36,7 @@ def test_driver_endpoint_create(django_client):
 
 @pytest.mark.django_db
 def test_driver_endpoint_update(django_client):
-
+    response = django_client.get(path="/driver/")
+    assert response.status_code == 200
+    json_response = response.json()
+    assert json_response["status"] == 200
