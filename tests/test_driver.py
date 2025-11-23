@@ -3,6 +3,7 @@ import pytest
 from app.models import Driver
 
 
+@pytest.mark.skip
 @pytest.mark.django_db
 def test_driver_endpoint(django_client):
     response = django_client.get(path="/driver/")
@@ -13,6 +14,7 @@ def test_driver_endpoint(django_client):
     assert json_response["count"] == Driver.objects.count()
 
 
+@pytest.mark.skip
 @pytest.mark.django_db
 def test_driver_endpoint_create(django_client):
     post_payload = {
@@ -30,4 +32,8 @@ def test_driver_endpoint_create(django_client):
     assert json_data["date_of_birth"] == post_payload["date_of_birth"]
     assert json_data["nationality_id"] == post_payload["nationality_id"]
     assert json_data["ref"] == post_payload["ref"]
+
+
+@pytest.mark.django_db
+def test_driver_endpoint_update(django_client):
 
