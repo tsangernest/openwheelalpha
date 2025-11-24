@@ -37,10 +37,10 @@ def test_driver_endpoint_create(django_client):
 
 @pytest.mark.django_db
 def test_driver_endpoint_customise_return_data(django_client):
-
-    DriverFactory()
+    test_driver = DriverFactory()
     response = django_client.get(path="/driver/")
-    json_response = response.json()
+    json_data = response.json().get("data", None)
+
     breakpoint()
 
 
