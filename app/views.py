@@ -41,15 +41,15 @@ def driver(request: HttpRequest):
     # v3
     ##################
     if request.method == "GET":
+        # df
+        # * only the fields being displayed on endpoint
+        # * contains a list of columns as a string as value
+        df = ["id", "surname", "forename"]
         return JsonResponse({
             "status": 200,
             "count": Driver.objects.count(),
             "content_type": "application/json",
-            "data": list(Driver.objects.values(
-                "id",
-                "surname",
-                "forename",
-            ))}
+            "data": list(Driver.objects.only(*df).values(*df))}
         )
 
     elif request.method == "POST":
