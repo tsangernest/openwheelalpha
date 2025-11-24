@@ -18,10 +18,39 @@ def nationality(request: HttpRequest):
 
 
 def driver(request: HttpRequest):
+    # v1
+    ###################
+    # if request.method == "GET":
+    #     return JsonResponse({"status": 200,
+    #                                         "count": Driver.objects.count(),
+    #                                         "content_type": "application/json",
+    #                                         "data": list(Driver.objects.values())})
+
+    # v2
+    ###################
+    # if request.method == "GET":
+    #     return JsonResponse({"status": 200,
+    #                                         "count": Driver.objects.count(),
+    #                                         "content_type": "application/json",
+    #                                         "data": json.loads(serialize(
+    #                                             format="json",
+    #                                             queryset=Driver.objects.all(),
+    #                                             fields=["id"]
+    #                                         ))})
+
+    # v3
+    ##################
     if request.method == "GET":
-        return JsonResponse({"status": 200,
-                                            "count": Driver.objects.count(),
-                                            "data": list(Driver.objects.values())})
+        return JsonResponse({
+            "status": 200,
+            "count": Driver.objects.count(),
+            "content_type": "application/json",
+            "data": list(Driver.objects.values(
+                "id",
+                "surname",
+                "forename",
+            ))}
+        )
 
     elif request.method == "POST":
         driver_obj = Driver.objects.create(**request.POST.dict())

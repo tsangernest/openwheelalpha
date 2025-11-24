@@ -21,7 +21,7 @@ def test_driver_endpoint_create(django_client):
     post_payload = {
         "surname": "Dayne",
         "date_of_birth": "1281-01-01",
-        "ref": "sword_of_the_morning",
+        "ref": "The Sword of the Morning.",
         "nationality_id": 3545,
     }
     response = django_client.post(path="/driver/", data=post_payload)
@@ -37,9 +37,11 @@ def test_driver_endpoint_create(django_client):
 
 @pytest.mark.django_db
 def test_driver_endpoint_customise_return_data(django_client):
+
     DriverFactory()
     response = django_client.get(path="/driver/")
     json_response = response.json()
+    breakpoint()
 
 
 
