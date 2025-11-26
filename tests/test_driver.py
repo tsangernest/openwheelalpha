@@ -37,17 +37,10 @@ def test_driver_endpoint_create(django_client):
 
 @pytest.mark.django_db
 def test_driver_endpoint_customise_return_data(django_client):
-    test_driver = DriverFactory()
+    DriverFactory.create()
     response = django_client.get(path="/driver/")
-    json_data = response.json().get("data", None)
-
-    breakpoint()
-
-
-
-
-
-
-
-
+    json_data = response.json()["data"][0]
+    expected_output = {"id", "surname", "forename"}
+    assert expected_output.issubset(json_data.keys())
+    assert set(json_data.keys()).issubset(Driver.objects.values().first().keys())
 

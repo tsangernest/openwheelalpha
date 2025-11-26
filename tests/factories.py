@@ -20,4 +20,4 @@ class DriverFactory(DriverMinFactory):
     forename = factory.Faker("first_name")
     ref = factory.LazyAttribute(lambda i: f"{i.surname.lower()}")
     code = factory.LazyAttribute(lambda j: f"{j.ref[:3].upper()}")
-    url = factory.LazyAttribute(lambda k: f"https://{k.surname.lower()}.com/")
+    url = factory.LazyAttribute(lambda k: f"https://{k.surname.lower()}{k.forename.lower()}.com/")
