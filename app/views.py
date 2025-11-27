@@ -48,7 +48,6 @@ def driver(request: HttpRequest):
         return JsonResponse({
             "status": 200,
             "count": Driver.objects.count(),
-            "content_type": "application/json",
             "data": list(Driver.objects.only(*dfs).values(*dfs))}
         )
 
