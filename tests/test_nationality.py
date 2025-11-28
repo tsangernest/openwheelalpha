@@ -3,7 +3,6 @@ import pytest
 from app.models import Nationality
 
 
-@pytest.mark.skip
 @pytest.mark.django_db
 def test_nationality_endpoint(django_client):
     response = django_client.get(path="/nationality/")
