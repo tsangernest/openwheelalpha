@@ -27,9 +27,26 @@ def test_driver_endpoint_create(django_client):
     assert Driver.objects.count() == 1
     assert json_response["status"] == 201
     json_data: dict = json_response["data"]
+
+    # Attributes in the post payload
     assert json_data["surname"] == post_payload["surname"]
+    assert json_data["date_of_birth"] == post_payload["date_of_birth"]
+    assert json_data["ref"] == post_payload["ref"]
+    assert json_data["nationality"] == post_payload["nationality_id"]
+
+    # Attributes left blank in post payload
     assert json_data["forename"] == post_payload.get("forename", "")
+    assert json_data["number"] == post_payload.get("number", "")
+    assert json_data["code"] == post_payload.get("code", "")
+    assert json_data["url"] == post_payload.get("url", "")
+
+    # Attributes generated
     assert json_data["id"] == Driver.objects.first().id
+    print(f"\n\n{Driver.objects.first().uuid=}\n")
+    # response from a POST method never returns UUID
+    with pytest.raises(expected_exception=KeyError):
+        assert json_data["uuid"]
+    print(f"\n\n{json_data=}\n")
 
 
 @pytest.mark.django_db

@@ -52,10 +52,9 @@ def driver(request: HttpRequest):
         )
 
     elif request.method == "POST":
-        dfs = ["id", "surname", "forename"]
-        driver_obj = Driver.objects.create(**request.POST.dict())
-        driver_data = Driver.objects.values(*dfs).get(pk=driver_obj.pk)
-        return JsonResponse({"status": 201, "data": driver_data})
+        d_obj = Driver.objects.create(**request.POST.dict())
+        data = Driver.objects.values(*d_obj.display_fields).get(pk=d_obj.pk)
+        return JsonResponse({"status": 201, "data": data})
 
     return JsonResponse({"status": 404})
 

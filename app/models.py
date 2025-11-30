@@ -38,8 +38,15 @@ class Driver(models.Model):
     class Meta:
         ordering = ["id"]
 
+    @cached_property
+    def display_fields(self):
+        # UUID is internal use only
+        fields = [d.name for d in Driver._meta.get_fields()]
+        fields.remove("uuid")
+        return fields
+
     def __str__(self):
-        return f"[{self.surname}, {self.forename}]"
+        return f"{self.code}, {self.number}, {self.surname}, {self.forename}"
 
 
 class Circuit(models.Model):
