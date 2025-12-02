@@ -69,3 +69,17 @@ class Circuit(models.Model):
     def __str__(self):
         return f"{self.name}"
 
+
+class Race(models.Model):
+    name = models.CharField(max_length=255)
+    track = models.ForeignKey(to="Nationality", on_delete=models.DO_NOTHING, blank=True)
+    date_of_race = models.DateField()
+    season_round_number = models.SmallIntegerField()
+    url = models.URLField(blank=True)
+
+    class Meta:
+        ordering = ["-date_of_race"]
+
+    def __str__(self):
+        return f"{self.date_of_race.year} - {self.name} - {self.season_round_number}"
+
