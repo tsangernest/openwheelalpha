@@ -42,7 +42,7 @@ class Migration(migrations.Migration):
             fields=[
                 ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
                 ("name", models.CharField(max_length=255)),
-                ("track", models.ForeignKey(blank=True, on_delete=django.db.models.deletion.DO_NOTHING, to="app.Circuit")),
+                ("track", models.ForeignKey(to="app.Circuit", on_delete=django.db.models.deletion.DO_NOTHING)),
                 ("date_of_race", models.DateField()),
                 ("season_round_number", models.SmallIntegerField()),
                 ("url", models.URLField(blank=True)),

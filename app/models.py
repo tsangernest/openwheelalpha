@@ -72,7 +72,7 @@ class Circuit(models.Model):
 
 class Race(models.Model):
     name = models.CharField(max_length=255)
-    track = models.ForeignKey(to="Nationality", on_delete=models.DO_NOTHING, blank=True)
+    track = models.ForeignKey(to="Circuit", on_delete=models.DO_NOTHING)
     date_of_race = models.DateField()
     season_round_number = models.SmallIntegerField()
     url = models.URLField(blank=True)
@@ -83,3 +83,16 @@ class Race(models.Model):
     def __str__(self):
         return f"{self.date_of_race.year} - {self.name} - {self.season_round_number}"
 
+
+class LapTime(models.Model):
+    race = models.ForeignKey(to="Race", on_delete=models.DO_NOTHING, related_name="lap_times")
+    driver = models.ForeignKey(to="Driver", on_delete=models.DO_NOTHING, related_name="lap_times")
+    lap_number = models.PositiveIntegerField()
+    race_position = models.PositiveIntegerField()
+    time = models.DurationField(blank=True, null=True)
+
+    class Meta:
+        ordering = ["-race"]
+
+    def __str__(self):
+        return f"{self.race}, {self.driver}, lap_number={self.lap_number}, position={self.race_position}"
