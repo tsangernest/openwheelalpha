@@ -1,0 +1,1080 @@
+[
+{
+  "model": "app.circuit",
+  "pk": 1,
+  "fields": {
+    "ref": "albert_park",
+    "name": "Albert Park Grand Prix Circuit",
+    "location": "Melbourne",
+    "country": 2249,
+    "longitude": "144.9679999999999893",
+    "latitude": "-37.8496999999999986",
+    "altitude": 10,
+    "url": "http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 2,
+  "fields": {
+    "ref": "sepang",
+    "name": "Sepang International Circuit",
+    "location": "Kuala Lumpur",
+    "country": 2888,
+    "longitude": "101.7379999999999995",
+    "latitude": "2.7608299999999999",
+    "altitude": 18,
+    "url": "http://en.wikipedia.org/wiki/Sepang_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 3,
+  "fields": {
+    "ref": "bahrain",
+    "name": "Bahrain International Circuit",
+    "location": "Sakhir",
+    "country": 2261,
+    "longitude": "50.5105999999999966",
+    "latitude": "26.0324999999999989",
+    "altitude": 7,
+    "url": "http://en.wikipedia.org/wiki/Bahrain_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 4,
+  "fields": {
+    "ref": "catalunya",
+    "name": "Circuit de Barcelona-Catalunya",
+    "location": "Montmeló",
+    "country": 3396,
+    "longitude": "2.2611100000000000",
+    "latitude": "41.5700000000000003",
+    "altitude": 109,
+    "url": "http://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 5,
+  "fields": {
+    "ref": "istanbul",
+    "name": "Istanbul Park",
+    "location": "Istanbul",
+    "country": 3530,
+    "longitude": "29.4050000000000011",
+    "latitude": "40.9517000000000024",
+    "altitude": 130,
+    "url": "http://en.wikipedia.org/wiki/Istanbul_Park"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 6,
+  "fields": {
+    "ref": "monaco",
+    "name": "Circuit de Monaco",
+    "location": "Monte-Carlo",
+    "country": 2967,
+    "longitude": "7.4205600000000000",
+    "latitude": "43.7346999999999966",
+    "altitude": 7,
+    "url": "http://en.wikipedia.org/wiki/Circuit_de_Monaco"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 7,
+  "fields": {
+    "ref": "villeneuve",
+    "name": "Circuit Gilles Villeneuve",
+    "location": "Montreal",
+    "country": 2392,
+    "longitude": "-73.5228000000000037",
+    "latitude": "45.5000000000000000",
+    "altitude": 13,
+    "url": "http://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 8,
+  "fields": {
+    "ref": "magny_cours",
+    "name": "Circuit de Nevers Magny-Cours",
+    "location": "Magny Cours",
+    "country": 2595,
+    "longitude": "3.1636099999999998",
+    "latitude": "46.8641999999999967",
+    "altitude": 228,
+    "url": "http://en.wikipedia.org/wiki/Circuit_de_Nevers_Magny-Cours"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 9,
+  "fields": {
+    "ref": "silverstone",
+    "name": "Silverstone Circuit",
+    "location": "Silverstone",
+    "country": 3545,
+    "longitude": "-1.0169400000000000",
+    "latitude": "52.0786000000000016",
+    "altitude": 153,
+    "url": "http://en.wikipedia.org/wiki/Silverstone_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 10,
+  "fields": {
+    "ref": "hockenheimring",
+    "name": "Hockenheimring",
+    "location": "Hockenheim",
+    "country": 2621,
+    "longitude": "8.5658300000000001",
+    "latitude": "49.3278000000000034",
+    "altitude": 103,
+    "url": "http://en.wikipedia.org/wiki/Hockenheimring"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 11,
+  "fields": {
+    "ref": "hungaroring",
+    "name": "Hungaroring",
+    "location": "Budapest",
+    "country": 2699,
+    "longitude": "19.2485999999999997",
+    "latitude": "47.5788999999999973",
+    "altitude": 264,
+    "url": "http://en.wikipedia.org/wiki/Hungaroring"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 12,
+  "fields": {
+    "ref": "valencia",
+    "name": "Valencia Street Circuit",
+    "location": "Valencia",
+    "country": 3396,
+    "longitude": "-0.3316670000000000",
+    "latitude": "39.4588999999999999",
+    "altitude": 4,
+    "url": "http://en.wikipedia.org/wiki/Valencia_Street_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 13,
+  "fields": {
+    "ref": "spa",
+    "name": "Circuit de Spa-Francorchamps",
+    "location": "Spa",
+    "country": 2295,
+    "longitude": "5.9713900000000004",
+    "latitude": "50.4371999999999971",
+    "altitude": 401,
+    "url": "http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 14,
+  "fields": {
+    "ref": "monza",
+    "name": "Autodromo Nazionale di Monza",
+    "location": "Monza",
+    "country": 2733,
+    "longitude": "9.2811100000000000",
+    "latitude": "45.6156000000000006",
+    "altitude": 162,
+    "url": "http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 15,
+  "fields": {
+    "ref": "marina_bay",
+    "name": "Marina Bay Street Circuit",
+    "location": "Marina Bay",
+    "country": 3356,
+    "longitude": "103.8640000000000043",
+    "latitude": "1.2914000000000001",
+    "altitude": 18,
+    "url": "http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 16,
+  "fields": {
+    "ref": "fuji",
+    "name": "Fuji Speedway",
+    "location": "Oyama",
+    "country": 2745,
+    "longitude": "138.9269999999999925",
+    "latitude": "35.3716999999999970",
+    "altitude": 583,
+    "url": "http://en.wikipedia.org/wiki/Fuji_Speedway"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 17,
+  "fields": {
+    "ref": "shanghai",
+    "name": "Shanghai International Circuit",
+    "location": "Shanghai",
+    "country": 2446,
+    "longitude": "121.2199999999999989",
+    "latitude": "31.3388999999999989",
+    "altitude": 5,
+    "url": "http://en.wikipedia.org/wiki/Shanghai_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 18,
+  "fields": {
+    "ref": "interlagos",
+    "name": "Autódromo José Carlos Pace",
+    "location": "São Paulo",
+    "country": 2340,
+    "longitude": "-46.6997000000000000",
+    "latitude": "-23.7036000000000016",
+    "altitude": 785,
+    "url": "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 19,
+  "fields": {
+    "ref": "indianapolis",
+    "name": "Indianapolis Motor Speedway",
+    "location": "Indianapolis",
+    "country": 3546,
+    "longitude": "-86.2347000000000037",
+    "latitude": "39.7950000000000017",
+    "altitude": 223,
+    "url": "http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 20,
+  "fields": {
+    "ref": "nurburgring",
+    "name": "Nürburgring",
+    "location": "Nürburg",
+    "country": 2621,
+    "longitude": "6.9474999999999998",
+    "latitude": "50.3355999999999995",
+    "altitude": 578,
+    "url": "http://en.wikipedia.org/wiki/N%C3%BCrburgring"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 21,
+  "fields": {
+    "ref": "imola",
+    "name": "Autodromo Enzo e Dino Ferrari",
+    "location": "Imola",
+    "country": 2733,
+    "longitude": "11.7166999999999994",
+    "latitude": "44.3438999999999979",
+    "altitude": 37,
+    "url": "http://en.wikipedia.org/wiki/Autodromo_Enzo_e_Dino_Ferrari"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 22,
+  "fields": {
+    "ref": "suzuka",
+    "name": "Suzuka Circuit",
+    "location": "Suzuka",
+    "country": 2745,
+    "longitude": "136.5409999999999968",
+    "latitude": "34.8430999999999997",
+    "altitude": 45,
+    "url": "http://en.wikipedia.org/wiki/Suzuka_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 24,
+  "fields": {
+    "ref": "yas_marina",
+    "name": "Yas Marina Circuit",
+    "location": "Abu Dhabi",
+    "country": 3544,
+    "longitude": "54.6030999999999977",
+    "latitude": "24.4671999999999983",
+    "altitude": 3,
+    "url": "http://en.wikipedia.org/wiki/Yas_Marina_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 25,
+  "fields": {
+    "ref": "galvez",
+    "name": "Autódromo Juan y Oscar Gálvez",
+    "location": "Buenos Aires",
+    "country": 2225,
+    "longitude": "-58.4592999999999989",
+    "latitude": "-34.6942999999999984",
+    "altitude": 8,
+    "url": "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 26,
+  "fields": {
+    "ref": "jerez",
+    "name": "Circuito de Jerez",
+    "location": "Jerez de la Frontera",
+    "country": 3396,
+    "longitude": "-6.0341699999999996",
+    "latitude": "36.7083000000000013",
+    "altitude": 37,
+    "url": "http://en.wikipedia.org/wiki/Circuito_Permanente_de_Jerez"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 27,
+  "fields": {
+    "ref": "estoril",
+    "name": "Autódromo do Estoril",
+    "location": "Estoril",
+    "country": 3182,
+    "longitude": "-9.3941700000000008",
+    "latitude": "38.7505999999999986",
+    "altitude": 130,
+    "url": "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_do_Estoril"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 28,
+  "fields": {
+    "ref": "okayama",
+    "name": "Okayama International Circuit",
+    "location": "Okayama",
+    "country": 2745,
+    "longitude": "134.2210000000000036",
+    "latitude": "34.9149999999999991",
+    "altitude": 266,
+    "url": "http://en.wikipedia.org/wiki/TI_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 29,
+  "fields": {
+    "ref": "adelaide",
+    "name": "Adelaide Street Circuit",
+    "location": "Adelaide",
+    "country": 2249,
+    "longitude": "138.6169999999999902",
+    "latitude": "-34.9271999999999991",
+    "altitude": 58,
+    "url": "http://en.wikipedia.org/wiki/Adelaide_Street_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 30,
+  "fields": {
+    "ref": "kyalami",
+    "name": "Kyalami",
+    "location": "Midrand",
+    "country": 3382,
+    "longitude": "28.0766999999999989",
+    "latitude": "-25.9893999999999998",
+    "altitude": 1460,
+    "url": "http://en.wikipedia.org/wiki/Kyalami"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 31,
+  "fields": {
+    "ref": "donington",
+    "name": "Donington Park",
+    "location": "Castle Donington",
+    "country": 3545,
+    "longitude": "-1.3752800000000001",
+    "latitude": "52.8305999999999969",
+    "altitude": 88,
+    "url": "http://en.wikipedia.org/wiki/Donington_Park"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 32,
+  "fields": {
+    "ref": "rodriguez",
+    "name": "Autódromo Hermanos Rodríguez",
+    "location": "Mexico City",
+    "country": 2937,
+    "longitude": "-99.0906999999999982",
+    "latitude": "19.4041999999999994",
+    "altitude": 2227,
+    "url": "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 33,
+  "fields": {
+    "ref": "phoenix",
+    "name": "Phoenix street circuit",
+    "location": "Phoenix",
+    "country": 3546,
+    "longitude": "-112.0750000000000028",
+    "latitude": "33.4478999999999971",
+    "altitude": 345,
+    "url": "http://en.wikipedia.org/wiki/Phoenix_street_circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 34,
+  "fields": {
+    "ref": "ricard",
+    "name": "Circuit Paul Ricard",
+    "location": "Le Castellet",
+    "country": 2595,
+    "longitude": "5.7916699999999999",
+    "latitude": "43.2505999999999986",
+    "altitude": 432,
+    "url": "http://en.wikipedia.org/wiki/Paul_Ricard_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 35,
+  "fields": {
+    "ref": "yeongam",
+    "name": "Korean International Circuit",
+    "location": "Yeongam County",
+    "country": 3391,
+    "longitude": "126.4170000000000016",
+    "latitude": "34.7332999999999998",
+    "altitude": 0,
+    "url": "http://en.wikipedia.org/wiki/Korean_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 36,
+  "fields": {
+    "ref": "jacarepagua",
+    "name": "Autódromo Internacional Nelson Piquet",
+    "location": "Rio de Janeiro",
+    "country": 2340,
+    "longitude": "-43.3950000000000031",
+    "latitude": "-22.9756000000000000",
+    "altitude": 1126,
+    "url": "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 37,
+  "fields": {
+    "ref": "detroit",
+    "name": "Detroit Street Circuit",
+    "location": "Detroit",
+    "country": 3546,
+    "longitude": "-83.0400999999999954",
+    "latitude": "42.3297999999999988",
+    "altitude": 177,
+    "url": "http://en.wikipedia.org/wiki/Detroit_street_circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 38,
+  "fields": {
+    "ref": "brands_hatch",
+    "name": "Brands Hatch",
+    "location": "Kent",
+    "country": 3545,
+    "longitude": "0.2630560000000000",
+    "latitude": "51.3569000000000031",
+    "altitude": 145,
+    "url": "http://en.wikipedia.org/wiki/Brands_Hatch"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 39,
+  "fields": {
+    "ref": "zandvoort",
+    "name": "Circuit Park Zandvoort",
+    "location": "Zandvoort",
+    "country": 3017,
+    "longitude": "4.5409199999999998",
+    "latitude": "52.3888000000000034",
+    "altitude": 6,
+    "url": "http://en.wikipedia.org/wiki/Circuit_Zandvoort"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 40,
+  "fields": {
+    "ref": "zolder",
+    "name": "Zolder",
+    "location": "Heusden-Zolder",
+    "country": 2295,
+    "longitude": "5.2569400000000002",
+    "latitude": "50.9894000000000034",
+    "altitude": 36,
+    "url": "http://en.wikipedia.org/wiki/Zolder"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 41,
+  "fields": {
+    "ref": "dijon",
+    "name": "Dijon-Prenois",
+    "location": "Dijon",
+    "country": 2595,
+    "longitude": "4.8991300000000004",
+    "latitude": "47.3624999999999972",
+    "altitude": 484,
+    "url": "http://en.wikipedia.org/wiki/Dijon-Prenois"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 42,
+  "fields": {
+    "ref": "dallas",
+    "name": "Fair Park",
+    "location": "Dallas",
+    "country": 3546,
+    "longitude": "-96.7587000000000046",
+    "latitude": "32.7774000000000001",
+    "altitude": 139,
+    "url": "http://en.wikipedia.org/wiki/Fair_Park"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 43,
+  "fields": {
+    "ref": "long_beach",
+    "name": "Long Beach",
+    "location": "California",
+    "country": 3546,
+    "longitude": "-118.1889999999999930",
+    "latitude": "33.7650999999999968",
+    "altitude": 12,
+    "url": "http://en.wikipedia.org/wiki/Long_Beach,_California"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 44,
+  "fields": {
+    "ref": "las_vegas",
+    "name": "Las Vegas Street Circuit",
+    "location": "Nevada",
+    "country": 3546,
+    "longitude": "-115.1740000000000066",
+    "latitude": "36.1161999999999992",
+    "altitude": 639,
+    "url": "http://en.wikipedia.org/wiki/Las_Vegas_Street_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 45,
+  "fields": {
+    "ref": "jarama",
+    "name": "Jarama",
+    "location": "Madrid",
+    "country": 3396,
+    "longitude": "-3.5855800000000002",
+    "latitude": "40.6171000000000006",
+    "altitude": 609,
+    "url": "http://en.wikipedia.org/wiki/Circuito_Permanente_Del_Jarama"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 46,
+  "fields": {
+    "ref": "watkins_glen",
+    "name": "Watkins Glen",
+    "location": "New York State",
+    "country": 3546,
+    "longitude": "-76.9271999999999991",
+    "latitude": "42.3369000000000000",
+    "altitude": 485,
+    "url": "http://en.wikipedia.org/wiki/Watkins_Glen_International"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 47,
+  "fields": {
+    "ref": "anderstorp",
+    "name": "Scandinavian Raceway",
+    "location": "Anderstorp",
+    "country": 3432,
+    "longitude": "13.6042000000000005",
+    "latitude": "57.2653000000000034",
+    "altitude": 153,
+    "url": "http://en.wikipedia.org/wiki/Scandinavian_Raceway"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 48,
+  "fields": {
+    "ref": "mosport",
+    "name": "Mosport International Raceway",
+    "location": "Ontario",
+    "country": 2392,
+    "longitude": "-78.6756000000000029",
+    "latitude": "44.0480999999999980",
+    "altitude": 332,
+    "url": "http://en.wikipedia.org/wiki/Mosport"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 49,
+  "fields": {
+    "ref": "montjuic",
+    "name": "Montjuïc",
+    "location": "Barcelona",
+    "country": 3396,
+    "longitude": "2.1516700000000002",
+    "latitude": "41.3663999999999987",
+    "altitude": 79,
+    "url": "http://en.wikipedia.org/wiki/Montju%C3%AFc_circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 50,
+  "fields": {
+    "ref": "nivelles",
+    "name": "Nivelles-Baulers",
+    "location": "Brussels",
+    "country": 2295,
+    "longitude": "4.3269399999999996",
+    "latitude": "50.6210999999999984",
+    "altitude": 139,
+    "url": "http://en.wikipedia.org/wiki/Nivelles-Baulers"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 51,
+  "fields": {
+    "ref": "charade",
+    "name": "Charade Circuit",
+    "location": "Clermont-Ferrand",
+    "country": 2595,
+    "longitude": "3.0388899999999999",
+    "latitude": "45.7471999999999994",
+    "altitude": 790,
+    "url": "http://en.wikipedia.org/wiki/Charade_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 52,
+  "fields": {
+    "ref": "tremblant",
+    "name": "Circuit Mont-Tremblant",
+    "location": "Quebec",
+    "country": 2392,
+    "longitude": "-74.6098999999999961",
+    "latitude": "46.1876999999999995",
+    "altitude": 214,
+    "url": "http://en.wikipedia.org/wiki/Circuit_Mont-Tremblant"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 53,
+  "fields": {
+    "ref": "essarts",
+    "name": "Rouen-Les-Essarts",
+    "location": "Rouen",
+    "country": 2595,
+    "longitude": "1.0045800000000000",
+    "latitude": "49.3305999999999969",
+    "altitude": 81,
+    "url": "http://en.wikipedia.org/wiki/Rouen-Les-Essarts"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 54,
+  "fields": {
+    "ref": "lemans",
+    "name": "Le Mans",
+    "location": "Le Mans",
+    "country": 2595,
+    "longitude": "0.2242310000000000",
+    "latitude": "47.9500000000000028",
+    "altitude": 67,
+    "url": "http://en.wikipedia.org/wiki/Circuit_de_la_Sarthe#Bugatti_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 55,
+  "fields": {
+    "ref": "reims",
+    "name": "Reims-Gueux",
+    "location": "Reims",
+    "country": 2595,
+    "longitude": "3.9308299999999998",
+    "latitude": "49.2541999999999973",
+    "altitude": 88,
+    "url": "http://en.wikipedia.org/wiki/Reims-Gueux"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 56,
+  "fields": {
+    "ref": "george",
+    "name": "Prince George Circuit",
+    "location": "Eastern Cape Province",
+    "country": 3382,
+    "longitude": "27.8735999999999997",
+    "latitude": "-33.0486000000000004",
+    "altitude": 15,
+    "url": "http://en.wikipedia.org/wiki/Prince_George_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 57,
+  "fields": {
+    "ref": "zeltweg",
+    "name": "Zeltweg",
+    "location": "Styria",
+    "country": 2250,
+    "longitude": "14.7477999999999998",
+    "latitude": "47.2038999999999973",
+    "altitude": 676,
+    "url": "http://en.wikipedia.org/wiki/Zeltweg_Airfield"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 58,
+  "fields": {
+    "ref": "aintree",
+    "name": "Aintree",
+    "location": "Liverpool",
+    "country": 3545,
+    "longitude": "-2.9405600000000001",
+    "latitude": "53.4769000000000005",
+    "altitude": 20,
+    "url": "http://en.wikipedia.org/wiki/Aintree_Motor_Racing_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 59,
+  "fields": {
+    "ref": "boavista",
+    "name": "Circuito da Boavista",
+    "location": "Oporto",
+    "country": 3182,
+    "longitude": "-8.6732499999999995",
+    "latitude": "41.1704999999999970",
+    "altitude": 28,
+    "url": "http://en.wikipedia.org/wiki/Circuito_da_Boavista"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 60,
+  "fields": {
+    "ref": "riverside",
+    "name": "Riverside International Raceway",
+    "location": "California",
+    "country": 3546,
+    "longitude": "-117.2729999999999961",
+    "latitude": "33.9369999999999976",
+    "altitude": 470,
+    "url": "http://en.wikipedia.org/wiki/Riverside_International_Raceway"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 61,
+  "fields": {
+    "ref": "avus",
+    "name": "AVUS",
+    "location": "Berlin",
+    "country": 2621,
+    "longitude": "13.2514000000000003",
+    "latitude": "52.4806000000000026",
+    "altitude": 53,
+    "url": "http://en.wikipedia.org/wiki/AVUS"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 62,
+  "fields": {
+    "ref": "monsanto",
+    "name": "Monsanto Park Circuit",
+    "location": "Lisbon",
+    "country": 3182,
+    "longitude": "-9.2030600000000007",
+    "latitude": "38.7197000000000031",
+    "altitude": 158,
+    "url": "http://en.wikipedia.org/wiki/Monsanto_Park_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 63,
+  "fields": {
+    "ref": "sebring",
+    "name": "Sebring International Raceway",
+    "location": "Florida",
+    "country": 3546,
+    "longitude": "-81.3482999999999947",
+    "latitude": "27.4546999999999990",
+    "altitude": 18,
+    "url": "http://en.wikipedia.org/wiki/Sebring_Raceway"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 64,
+  "fields": {
+    "ref": "ain-diab",
+    "name": "Ain Diab",
+    "location": "Casablanca",
+    "country": 2980,
+    "longitude": "-7.6875000000000000",
+    "latitude": "33.5786000000000016",
+    "altitude": 19,
+    "url": "http://en.wikipedia.org/wiki/Ain-Diab_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 65,
+  "fields": {
+    "ref": "pescara",
+    "name": "Pescara Circuit",
+    "location": "Pescara",
+    "country": 2733,
+    "longitude": "14.1508000000000003",
+    "latitude": "42.4750000000000014",
+    "altitude": 129,
+    "url": "http://en.wikipedia.org/wiki/Pescara_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 66,
+  "fields": {
+    "ref": "bremgarten",
+    "name": "Circuit Bremgarten",
+    "location": "Bern",
+    "country": 3434,
+    "longitude": "7.4019399999999997",
+    "latitude": "46.9588999999999999",
+    "altitude": 551,
+    "url": "http://en.wikipedia.org/wiki/Circuit_Bremgarten"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 67,
+  "fields": {
+    "ref": "pedralbes",
+    "name": "Circuit de Pedralbes",
+    "location": "Barcelona",
+    "country": 3396,
+    "longitude": "2.1166700000000001",
+    "latitude": "41.3903000000000034",
+    "altitude": 85,
+    "url": "http://en.wikipedia.org/wiki/Pedralbes_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 68,
+  "fields": {
+    "ref": "buddh",
+    "name": "Buddh International Circuit",
+    "location": "Uttar Pradesh",
+    "country": 2712,
+    "longitude": "77.5331000000000046",
+    "latitude": "28.3487000000000009",
+    "altitude": 194,
+    "url": "http://en.wikipedia.org/wiki/Buddh_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 69,
+  "fields": {
+    "ref": "americas",
+    "name": "Circuit of the Americas",
+    "location": "Austin",
+    "country": 3546,
+    "longitude": "-97.6410999999999945",
+    "latitude": "30.1327999999999996",
+    "altitude": 161,
+    "url": "http://en.wikipedia.org/wiki/Circuit_of_the_Americas"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 70,
+  "fields": {
+    "ref": "red_bull_ring",
+    "name": "Red Bull Ring",
+    "location": "Spielberg",
+    "country": 2250,
+    "longitude": "14.7646999999999995",
+    "latitude": "47.2197000000000031",
+    "altitude": 678,
+    "url": "http://en.wikipedia.org/wiki/Red_Bull_Ring"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 71,
+  "fields": {
+    "ref": "sochi",
+    "name": "Sochi Autodrom",
+    "location": "Sochi",
+    "country": 3254,
+    "longitude": "39.9577999999999989",
+    "latitude": "43.4057000000000031",
+    "altitude": 2,
+    "url": "http://en.wikipedia.org/wiki/Sochi_Autodrom"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 73,
+  "fields": {
+    "ref": "baku",
+    "name": "Baku City Circuit",
+    "location": "Baku",
+    "country": 2255,
+    "longitude": "49.8532999999999973",
+    "latitude": "40.3725000000000023",
+    "altitude": -7,
+    "url": "http://en.wikipedia.org/wiki/Baku_City_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 75,
+  "fields": {
+    "ref": "portimao",
+    "name": "Autódromo Internacional do Algarve",
+    "location": "Portimão",
+    "country": 3182,
+    "longitude": "-8.6266999999999996",
+    "latitude": "37.2269999999999968",
+    "altitude": 108,
+    "url": "http://en.wikipedia.org/wiki/Algarve_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 76,
+  "fields": {
+    "ref": "mugello",
+    "name": "Autodromo Internazionale del Mugello",
+    "location": "Mugello",
+    "country": 2733,
+    "longitude": "11.3719000000000001",
+    "latitude": "43.9975000000000023",
+    "altitude": 255,
+    "url": "http://en.wikipedia.org/wiki/Mugello_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 77,
+  "fields": {
+    "ref": "jeddah",
+    "name": "Jeddah Corniche Circuit",
+    "location": "Jeddah",
+    "country": 3320,
+    "longitude": "39.1043999999999983",
+    "latitude": "21.6319000000000017",
+    "altitude": 15,
+    "url": "http://en.wikipedia.org/wiki/Jeddah_Street_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 78,
+  "fields": {
+    "ref": "losail",
+    "name": "Losail International Circuit",
+    "location": "Al Daayen",
+    "country": 3199,
+    "longitude": "51.4542000000000002",
+    "latitude": "25.4899999999999984",
+    "altitude": 12,
+    "url": "http://en.wikipedia.org/wiki/Losail_International_Circuit"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 79,
+  "fields": {
+    "ref": "miami",
+    "name": "Miami International Autodrome",
+    "location": "Miami",
+    "country": 3546,
+    "longitude": "-80.2389000000000010",
+    "latitude": "25.9581000000000017",
+    "altitude": 0,
+    "url": "http://en.wikipedia.org/wiki/Miami_International_Autodrome"
+  }
+},
+{
+  "model": "app.circuit",
+  "pk": 80,
+  "fields": {
+    "ref": "vegas",
+    "name": "Las Vegas Strip Street Circuit",
+    "location": "Las Vegas",
+    "country": 3546,
+    "longitude": "-115.1730000000000018",
+    "latitude": "36.1146999999999991",
+    "altitude": 642,
+    "url": "https://en.wikipedia.org/wiki/Las_Vegas_Grand_Prix#Circuit"
+  }
+}
+]
