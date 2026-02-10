@@ -12,14 +12,14 @@ COPY requirements.txt /app/
 
 
 WORKDIR /var
-RUN python -m venv venv/
+RUN python -m venv venv/ --prompt=openwheelalpha
 
 
 WORKDIR /app
 
 
-RUN pip install --upgrade 'pip<25.3'
-RUN pip install -U setuptools wheel psycopg2-binary
+RUN pip install --upgrade 'pip<25.3' --no-cache-dir
+RUN pip install -U setuptools psycopg2-binary --no-cache-dir
 RUN pip install -r requirements.txt --no-cache-dir
 
 
