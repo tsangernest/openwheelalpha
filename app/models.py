@@ -1,7 +1,7 @@
-from functools import cached_property
 from uuid import uuid4
 
 from django.db import models
+from django.utils.functional import cached_property
 
 from app.managers import _DeprecateManager, NationalityManager
 
