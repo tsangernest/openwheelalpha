@@ -1,7 +1,11 @@
+from pprint import PrettyPrinter
+
 import pytest
 
 from app.models import Driver
 from tests.factories import DriverFactory
+
+pp = PrettyPrinter(indent=2, width=1)
 
 
 @pytest.mark.django_db
@@ -46,7 +50,8 @@ def test_driver_endpoint_create(django_client):
     # response from a POST method never returns UUID
     with pytest.raises(expected_exception=KeyError):
         assert json_data["uuid"]
-    print(f"\n\n{json_data=}\n")
+    print(f"\n\n")
+    pp.pprint(json_data)
 
 
 @pytest.mark.django_db
