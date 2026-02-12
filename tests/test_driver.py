@@ -5,7 +5,7 @@ import pytest
 from app.models import Driver
 from tests.factories import DriverFactory
 
-pp = PrettyPrinter(indent=2, width=1)
+pp = PrettyPrinter(indent=2, width=120)
 
 
 @pytest.mark.django_db
@@ -25,6 +25,9 @@ def test_driver_endpoint_create(django_client):
         "date_of_birth": "1281-01-01",
         "ref": "The Sword of the Morning.",
         "nationality_id": 3545,
+        "number": "222",
+        "code": "DAY",
+        "forename": "Arthur",
     }
     response = django_client.post(path="/driver/", data=post_payload)
     json_response = response.json()
@@ -37,8 +40,6 @@ def test_driver_endpoint_create(django_client):
     assert json_data["date_of_birth"] == post_payload["date_of_birth"]
     assert json_data["ref"] == post_payload["ref"]
     assert json_data["nationality"] == post_payload["nationality_id"]
-
-    # Attributes left blank in post payload
     assert json_data["forename"] == post_payload.get("forename", "")
     assert json_data["number"] == post_payload.get("number", "")
     assert json_data["code"] == post_payload.get("code", "")
