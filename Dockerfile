@@ -12,7 +12,8 @@ COPY requirements.txt /app/
 
 
 WORKDIR /var
-RUN python -m venv venv/ --prompt=openwheelalpha
+RUN python -m venv venv/ --prompt openwheelalpha
+RUN source /var/venv/bin/activate
 
 
 WORKDIR /app
