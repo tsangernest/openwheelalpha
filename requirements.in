@@ -11,6 +11,8 @@ pytest-django
 pytest-repeat
 django-test-migrations
 django-debug-toolbar
+httpx
+polyfactory
 
 isort
 black

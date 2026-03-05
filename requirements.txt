@@ -4,12 +4,18 @@
 #
 #    pip-compile requirements.in
 #
+anyio==4.12.1
+    # via httpx
 asgiref==3.10.0
     # via
     #   django
     #   django-cors-headers
 black==25.9.0
     # via -r requirements.in
+certifi==2026.2.25
+    # via
+    #   httpcore
+    #   httpx
 click==8.3.0
     # via black
 django==5.2.11
@@ -29,9 +35,21 @@ django-test-migrations==1.5.0
 factory-boy==3.3.3
     # via -r requirements.in
 faker==37.12.0
-    # via factory-boy
+    # via
+    #   factory-boy
+    #   polyfactory
 fancycompleter==0.11.1
     # via pdbpp
+h11==0.16.0
+    # via httpcore
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+    # via -r requirements.in
+idna==3.11
+    # via
+    #   anyio
+    #   httpx
 iniconfig==2.3.0
     # via pytest
 invoke==2.2.1
@@ -56,6 +74,8 @@ platformdirs==4.5.0
     # via black
 pluggy==1.6.0
     # via pytest
+polyfactory==3.3.0
+    # via -r requirements.in
 psycopg[binary,pool]==3.3.3
     # via -r requirements.in
 psycopg-binary==3.3.3
@@ -89,6 +109,7 @@ sqlparse==0.5.3
 typing-extensions==4.15.0
     # via
     #   django-test-migrations
+    #   polyfactory
     #   psycopg-pool
 tzdata==2025.2
     # via
